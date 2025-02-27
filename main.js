@@ -8,15 +8,18 @@ class Factura {
         this.subtotal = subtotal;
         this.IVA = IVA;
     }
+    
     // getters
     get total() {
         // método get
         return this.subtotal + this.IVA;
     }
+
     // setters
     set nuevaDivisa(valor) {
         this.divisa = valor;
     }
+
     // métodos
     aplicarDescuento(porcentaje) {
         this.subtotal -= this.subtotal / 100 * porcentaje;
